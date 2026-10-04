@@ -1,10 +1,16 @@
 # uav-periodic-vs-gating
 
-Code, frozen pre-registration and results for the manuscript
+Code, frozen pre-registration and results for the paper below.
 
-> **When Is Periodic Detection Enough for UAV Traffic Monitoring? Theory and a Pre-Registered Test of Cue-Triggered Gating**
-> Dat Lam Quoc, FPT School of Business and Technology (FSB), FPT University, Ho Chi Minh City, Vietnam.
-> Submitted to *IEEE Transactions on Intelligent Transportation Systems* (under review).
+## Paper
+
+| | |
+|---|---|
+| title | **When Is Periodic Detection Enough for UAV Traffic Monitoring? Theory and a Pre-Registered Test of Cue-Triggered Gating** |
+| author | Dat Lam Quoc — FPT School of Business and Technology (FSB) – FPT University, Ho Chi Minh City, Vietnam — ORCID [0009-0004-5432-9343](https://orcid.org/0009-0004-5432-9343) — lamquocdat@gmail.com |
+| status | submitted to IEEE Transactions on Intelligent Transportation Systems (T-ITS), October 2026 |
+| submitted PDF | [`paper_submitted/main.pdf`](paper_submitted/main.pdf) — sha256 `4d9c4b6f215f47dbd0b0498c16ce49c7bf25acf4de83ce149967739bf4a1fc26` |
+| supplementary | [`paper_submitted/supplementary.pdf`](paper_submitted/supplementary.pdf) — sha256 `a636e874d9da4d722c6b3b50b90f99fa8b07dfe7e878b57e6b38fdeb00d93cc0` |
 
 ## Summary
 
@@ -147,6 +153,7 @@ code/kaggle/             Kaggle notebooks used to train YOLO26-s/-n on VisDrone2
 tests/                   pytest-style tests (fixtures are synthesised by the tests)
 results/p1, p2, p3       small derived results (JSON/CSV); results/p2/sim = simulated-channel checks
 paper/figs, paper/figures  figures of the paper (PDF/PNG); paper/numbers.tex, paper/tables = generated macros
+paper_submitted/         submitted main.pdf and supplementary.pdf
 ```
 
 ## Reproduction
@@ -155,14 +162,19 @@ Environment: Python 3.11.9 (Windows 11, Intel Core i7-1185G7, Iris Xe iGPU); `pi
 (ultralytics 8.4.163, openvino 2026.4.0). Datasets are **not** redistributed: download UAVDT (and VisDrone2019-DET for training)
 from the official sources and set `THS_DATASETS` to their parent folder (layout in `code/paths.py`, sources in `DATA_SOURCES.md`).
 
-Detector weights are not included (Kaggle training outputs; see `code/kaggle/README_KAGGLE_28.md`):
+## Weights
 
-| detector | Kaggle output | sha256 of `weights/best.pt` |
-|---|---|---|
-| YOLO26-s, VisDrone2019-DET, 1024 (main detector) | <!-- TODO-DAT: public Kaggle output URL --> to be added | `825dffcc41f8bfcd871d97b1e48b8fc3ba8fad2002cd3c0e743ae07e5a57bf84` |
-| YOLO26-n, VisDrone2019-DET, 1024 (low-recall level @640, tiny cue @320) | <!-- TODO-DAT: public Kaggle output URL --> to be added | `4dc79ab7b900ee4ba382719e3c101ce8a56b6f045c3bbc9ae0af15d3b29472e3` |
+Detector weights are not included (Kaggle training outputs; training notebooks and instructions in `code/kaggle/`).
+Kaggle output link: to be added by the author.
 
-From detector dumps to the score (one detector worker at a time; heavy jobs stop below 6 GB free RAM):
+| detector | sha256 of `weights/best.pt` |
+|---|---|
+| YOLO26-s, VisDrone2019-DET, imgsz 1024 (main detector; OpenVINO IR @1024) | `825dffcc41f8bfcd871d97b1e48b8fc3ba8fad2002cd3c0e743ae07e5a57bf84` |
+| YOLO26-n, VisDrone2019-DET, imgsz 1024 (low-recall level, IR @640; tiny cue, IR @320) | `4dc79ab7b900ee4ba382719e3c101ce8a56b6f045c3bbc9ae0af15d3b29472e3` |
+
+### From detector dumps to the score
+
+One detector worker at a time; heavy jobs stop below 6 GB free RAM):
 
 ```bash
 python code/p0_parse.py && python code/p0_events.py && python code/p0_egomotion.py      # events, ego-motion (TRAIN)
@@ -191,4 +203,4 @@ UAVDT and VisDrone remain under their own licences.
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). Release used for the submission: `v1.0-submission`.
+See [`CITATION.cff`](CITATION.cff). Release used for the submission: `v1.0.1-submission` (same code and results as `v1.0-submission`, plus paper metadata and the submitted PDFs).
