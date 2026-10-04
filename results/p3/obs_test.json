@@ -1,0 +1,582 @@
+{
+ "obs": [
+  {
+   "id": "UAVDT|m0|3|M6-20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.09876033057851241,
+   "lo": -0.21003846153846153,
+   "hi": 0.21978965183752402,
+   "p_boot": 0.3479624641117287,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.22107438016528932,
+   "lo": -0.32201492537313436,
+   "hi": 0.08015909090909072,
+   "p_boot": 0.0240863910658488,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.5804912490548694,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.5591453416181477,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|hovering|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.023553719008264473,
+   "lo": 0.005555555555555554,
+   "hi": 0.032212035123966976,
+   "p_boot": 0.0002554852523863482,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|hovering|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.042975206611570255,
+   "lo": 0.008692546583850935,
+   "hi": 0.061739769820971895,
+   "p_boot": 0.0010628532580350505,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M>20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.13418674698795174,
+   "lo": -0.19346466845795113,
+   "hi": -0.09779576998900051,
+   "p_boot": 7.988777819202954e-08,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M>20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.2093373493975904,
+   "lo": -0.2959001666541833,
+   "hi": -0.157985347985348,
+   "p_boot": 5.9459515687546844e-09,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M>20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M>20|hovering|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M>20|hovering|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.03253012048192771,
+   "lo": 0.014848723916216326,
+   "hi": 0.06938304924242424,
+   "p_boot": 0.021476312884025277,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M>20|hovering|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.04939759036144579,
+   "lo": 0.020039345748187214,
+   "hi": 0.10721507352941179,
+   "p_boot": 0.026446597925332792,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.38884297520661154,
+   "lo": -0.5187651209677421,
+   "hi": -0.09650745013217987,
+   "p_boot": 9.58397446239021e-05,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.4979338842975209,
+   "lo": -0.6349662937464144,
+   "hi": -0.24283023483365954,
+   "p_boot": 1.4199448477277545e-07,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.5036693183825836,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.44615764770223215,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|hovering|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.07314049586776859,
+   "lo": 0.011111111111111115,
+   "hi": 0.12542895837803042,
+   "p_boot": 0.025489105404683493,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|hovering|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.07809917355371902,
+   "lo": 0.00316666666666667,
+   "hi": 0.14336431962025314,
+   "p_boot": 0.051509543824852594,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M>20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.3930722891566264,
+   "lo": -0.5479517136098581,
+   "hi": -0.3033785952273126,
+   "p_boot": 2.2198566042737498e-09,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M>20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.46234939759036153,
+   "lo": -0.6389811205640106,
+   "hi": -0.36291438586887875,
+   "p_boot": 5.124367735389274e-10,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M>20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M>20|hovering|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M>20|hovering|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.09789156626506024,
+   "lo": 0.038614182811110016,
+   "hi": 0.22777879901960785,
+   "p_boot": 0.04394312702198441,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M>20|hovering|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.10677710843373497,
+   "lo": 0.03154732555580013,
+   "hi": 0.25367830882352943,
+   "p_boot": 0.054848259006588206,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.19256198347107434,
+   "lo": -0.3420118279569892,
+   "hi": 0.004877368421052587,
+   "p_boot": 0.023395769804096654,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.390909090909091,
+   "lo": -0.5277834939759037,
+   "hi": -0.2094482173174875,
+   "p_boot": 3.493575509189386e-07,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.519906739539932,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.45776982314511566,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|hovering|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.04586776859504131,
+   "lo": 0.009086850649350647,
+   "hi": 0.06883809880846234,
+   "p_boot": 0.0038949112267531675,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|hovering|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.07272727272727274,
+   "lo": 0.011360157699443414,
+   "hi": 0.10391390160183066,
+   "p_boot": 0.001435809601861922,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M>20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.3256024096385543,
+   "lo": -0.45707643307475515,
+   "hi": -0.2495715408805032,
+   "p_boot": 1.6715835116663616e-09,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M>20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.4578313253012049,
+   "lo": -0.6365400452594254,
+   "hi": -0.35586802657542876,
+   "p_boot": 7.169013206019789e-10,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M>20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M>20|hovering|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M>20|hovering|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.08237951807228916,
+   "lo": 0.036656249999999994,
+   "hi": 0.18594250541125543,
+   "p_boot": 0.03627280738200746,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M>20|hovering|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.10602409638554218,
+   "lo": 0.03623551829268293,
+   "hi": 0.244000992063492,
+   "p_boot": 0.04429912650160422,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.31322314049586775,
+   "lo": -0.5150267857142857,
+   "hi": -0.147454475308642,
+   "p_boot": 0.0017067958758028028,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.36115702479338846,
+   "lo": -0.5380222222222224,
+   "hi": -0.1794513627819549,
+   "p_boot": 0.0003693222327383433,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.5256767185180247,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -0.5182459957155364,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|hovering|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.051239669421487596,
+   "lo": -0.013898809523809525,
+   "hi": 0.09966723602484472,
+   "p_boot": 0.0989658192112273,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|hovering|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.05330578512396695,
+   "lo": -0.021452067669172927,
+   "hi": 0.09567109055969251,
+   "p_boot": 0.077117471144434,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M>20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.44442771084337346,
+   "lo": -0.6357296316964284,
+   "hi": -0.33282621285108843,
+   "p_boot": 6.369582754137718e-08,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M>20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.5085843373493977,
+   "lo": -0.7175851004464288,
+   "hi": -0.3870344505427183,
+   "p_boot": 1.8210059559990162e-08,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M>20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M>20|hovering|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M>20|hovering|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.10647590361445781,
+   "lo": 0.047263313195726346,
+   "hi": 0.24127803583278026,
+   "p_boot": 0.03452345569195551,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M>20|hovering|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.11355421686746991,
+   "lo": 0.04363874767753922,
+   "hi": 0.25824182299182297,
+   "p_boot": 0.03839155410311737,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|moving|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.21018099547511312,
+   "lo": -0.2769882273447855,
+   "hi": -0.12802552883404678,
+   "p_boot": 1.8364514661740382e-06,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|moving|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "delta": -0.34230769230769226,
+   "lo": -0.4214652908067541,
+   "hi": -0.24664948453608246,
+   "p_boot": 2.0265467328706158e-11,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|moving|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|moving|yolo26s_1024|border_band|th0.0767772|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|moving|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.04728506787330316,
+   "lo": 0.006242559523809521,
+   "hi": 0.08242273163377192,
+   "p_boot": 0.02367195857752414,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|moving|yolo26s_1024>yolo26n_640|border_band|th0.0767772|w5|R30",
+   "delta": 0.07782805429864253,
+   "lo": 0.008992480684326716,
+   "hi": 0.12515277626565055,
+   "p_boot": 0.010577948498465967,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|moving|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.51289592760181,
+   "lo": -0.7241071428571432,
+   "hi": -0.2863745676610462,
+   "p_boot": 8.711921846939499e-06,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|moving|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": -0.5063348416289591,
+   "lo": -0.7061603682170541,
+   "hi": -0.30180063678842106,
+   "p_boot": 3.16501793663615e-06,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|moving|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|moving|yolo26s_1024|orb_lite_diff|th0.0436103|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|moving|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.12986425339366514,
+   "lo": 0.020056108508977363,
+   "hi": 0.22268466202270373,
+   "p_boot": 0.020136273500523088,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|moving|yolo26s_1024>yolo26n_640|orb_lite_diff|th0.0436103|w5|R30",
+   "delta": 0.11357466063348415,
+   "lo": 0.015560581391094359,
+   "hi": 0.19899497487437184,
+   "p_boot": 0.022405071345804908,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|moving|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.4371040723981901,
+   "lo": -0.7495535714285716,
+   "hi": -0.0856418396643111,
+   "p_boot": 0.021341449124998548,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|moving|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "delta": -0.43099547511312203,
+   "lo": -0.7227998057524533,
+   "hi": -0.11051690681845334,
+   "p_boot": 0.013782452460087885,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|moving|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|moving|yolo26s_1024|raw_diff|th0.0278846|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|moving|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.10701357466063349,
+   "lo": 0.008482926065162906,
+   "hi": 0.21418112051758553,
+   "p_boot": 0.06821298417211705,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|moving|yolo26s_1024>yolo26n_640|raw_diff|th0.0278846|w5|R30",
+   "delta": 0.08914027149321267,
+   "lo": 0.0013773148148148158,
+   "hi": 0.18073138390272145,
+   "p_boot": 0.07936676515107208,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|3|M6-20|moving|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.5751131221719459,
+   "lo": -0.7189149560117305,
+   "hi": -0.3111101485148516,
+   "p_boot": 7.917277760757715e-08,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|5|M6-20|moving|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "delta": -0.5640271493212669,
+   "lo": -0.6764292354806954,
+   "hi": -0.3020588235294116,
+   "p_boot": 1.1866716527743878e-08,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L3_eps0.02|M6-20|moving|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|iso_L5_eps0.02|M6-20|moving|yolo26s_1024|tiny_det|th0.88334|w5|R30",
+   "gate_cheaper": false,
+   "diff": -Infinity,
+   "diff_lo": -1000000000.0,
+   "diff_hi": -1000000000.0,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L3|M6-20|moving|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.12850678733031676,
+   "lo": 0.024797365754812575,
+   "hi": 0.20964630225080386,
+   "p_boot": 0.010277753464759625,
+   "size_rule_test": true
+  },
+  {
+   "id": "UAVDT|m0|H8_L5|M6-20|moving|yolo26s_1024>yolo26n_640|tiny_det|th0.88334|w5|R30",
+   "delta": 0.10361990950226245,
+   "lo": 0.011156716417910452,
+   "hi": 0.17963636363636368,
+   "p_boot": 0.024407577109765894,
+   "size_rule_test": true
+  }
+ ],
+ "boundary": null,
+ "boundary_note": "kh\u00f4ng c\u00f3 CI d\u1ef1 \u0111o\u00e1n q_o* \u0111\u00f3ng b\u0103ng cho k\u00eanh th\u1eadt trong prereg_cells.json \u2192 ti\u00eau ch\u00ed (ii) kh\u00f4ng \u0111\u00e1nh gi\u00e1"
+}

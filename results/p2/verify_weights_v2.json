@@ -1,0 +1,378 @@
+{
+  "dir": "$THS_DATASETS\\_models\\28\\yolo26s_visdrone_1024\\28_yolo26s_visdrone_1024_export",
+  "hash": {
+    "TRAIN_LOG.md": {
+      "ok": 33,
+      "mismatch": 0,
+      "missing": 0,
+      "listed": 33
+    }
+  },
+  "models": [
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_1024\\best.xml",
+      "input_hw": [
+        1024,
+        1024
+      ],
+      "ms_synthetic_1024x540": 461.33,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 282.96,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_1280\\best.xml",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 532.1,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 527.72,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_640\\best.xml",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 173.03,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 142.79,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_960\\best.xml",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 341.69,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 282.03,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "weights\\best_openvino_model\\best.xml",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 551.87,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 892.83,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_1024.onnx",
+      "input_hw": [
+        1024,
+        1024
+      ],
+      "ms_synthetic_1024x540": 377.25,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 420.36,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_1280.onnx",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 634.85,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 574.12,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_640.onnx",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 225.12,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 167.72,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_960.onnx",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 331.85,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 353.98,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "weights\\best.onnx",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 754.57,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 599.49,
+      "boxes_ultralytics_bus.jpg": 0
+    }
+  ],
+  "hash_ok": true,
+  "no_nms": [
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_1024\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_1280\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_640\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_960\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "weights\\best_openvino_model\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_1024.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_1280.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_640.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_960.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "weights\\best.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    }
+  ],
+  "no_nms_ok": true,
+  "all_ok": true
+}

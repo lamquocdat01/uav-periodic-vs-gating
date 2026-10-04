@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code or the pre-registration, please cite the paper and this repository."
+title: "uav-periodic-vs-gating: code, pre-registration and results for 'When Is Periodic Detection Enough for UAV Traffic Monitoring?'"
+type: software
+authors:
+  - family-names: "Lam Quoc"
+    given-names: "Dat"
+    email: "lamquocdat@gmail.com"
+    affiliation: "FPT School of Business and Technology (FSB), FPT University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0004-5432-9343"
+repository-code: "https://github.com/lamquocdat01/uav-periodic-vs-gating"
+version: "v1.0-submission"
+date-released: "2026-10-04"
+license: MIT
+keywords:
+  - UAV traffic monitoring
+  - onboard object detection
+  - frame skipping
+  - event-triggered sensing
+  - pre-registered evaluation
+preferred-citation:
+  type: article
+  title: "When Is Periodic Detection Enough for UAV Traffic Monitoring? Theory and a Pre-Registered Test of Cue-Triggered Gating"
+  authors:
+    - family-names: "Lam Quoc"
+      given-names: "Dat"
+      orcid: "https://orcid.org/0009-0004-5432-9343"
+  journal: "IEEE Transactions on Intelligent Transportation Systems"
+  notes: "Submitted; under review."
+  year: 2026

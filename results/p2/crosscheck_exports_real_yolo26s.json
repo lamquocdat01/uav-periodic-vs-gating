@@ -1,0 +1,96 @@
+{
+  "name": "yolo26s_visdrone_1024",
+  "input": "uavdt_train_real",
+  "tol": 0.001,
+  "all_pass": true,
+  "rows": [
+    {
+      "imgsz": 640,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9505908489227295,
+      "pass": true
+    },
+    {
+      "imgsz": 640,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.950646698474884,
+      "pass": true
+    },
+    {
+      "imgsz": 960,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9568650126457214,
+      "pass": true
+    },
+    {
+      "imgsz": 960,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9568808674812317,
+      "pass": true
+    },
+    {
+      "imgsz": 1024,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9680156111717224,
+      "pass": true
+    },
+    {
+      "imgsz": 1024,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9676274061203003,
+      "pass": true
+    },
+    {
+      "imgsz": 1280,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9622761607170105,
+      "pass": true
+    },
+    {
+      "imgsz": 1280,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.9623808860778809,
+      "pass": true
+    }
+  ]
+}

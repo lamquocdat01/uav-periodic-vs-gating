@@ -1,0 +1,1226 @@
+{
+  "env": {
+    "timestamp": "2026-09-27T13:29:43+07:00",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "<repo>\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+    "cpu_logical": 8,
+    "packages": {
+      "ultralytics": "8.4.163",
+      "openvino": "2026.4.0",
+      "torch": "2.14.0",
+      "torchvision": "0.29.0",
+      "onnx": "1.23.0",
+      "onnxslim": "0.1.96",
+      "onnxruntime": "1.30.0",
+      "opencv-python": "5.0.0.93",
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "scipy": "1.17.1",
+      "pyarrow": "25.0.1",
+      "nbconvert": "7.17.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.3.0",
+      "nbformat": "5.11.1",
+      "psutil": "7.2.2"
+    },
+    "cv2_build_threads_default": 8,
+    "torch_cuda_available": false,
+    "torch_num_threads": 4,
+    "openvino_runtime_version": "2026.4.0-22959-99c81491cc3-releases/2026/4",
+    "openvino_available_devices": [
+      "CPU",
+      "GPU"
+    ],
+    "openvino_devices": {
+      "CPU": {
+        "FULL_DEVICE_NAME": "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+        "DEVICE_ARCHITECTURE": "intel64",
+        "OPTIMIZATION_CAPABILITIES": "['WINOGRAD', 'FP32', 'INT8', 'BIN', 'EXPORT_IMPORT']"
+      },
+      "GPU": {
+        "FULL_DEVICE_NAME": "Intel(R) Iris(R) Xe Graphics (iGPU)",
+        "DEVICE_ARCHITECTURE": "GPU: vendor=0x8086 arch=v12.0.0",
+        "OPTIMIZATION_CAPABILITIES": "['FP32', 'BIN', 'FP16', 'INT8', 'GPU_USM_MEMORY', 'EXPORT_IMPORT']",
+        "GPU_DEVICE_TOTAL_MEM_SIZE": 15530872832
+      }
+    },
+    "ram_gb": 31.71
+  },
+  "config": {
+    "runs": 100,
+    "warmup": 10,
+    "dump_sizes": [
+      640,
+      960,
+      1280
+    ],
+    "dump_models": [
+      "yolo26s",
+      "yolo26n"
+    ],
+    "c_denominator": "yolo26s@1024",
+    "tiny_detector": "yolo26n@320",
+    "src_wh": [
+      1024,
+      540
+    ],
+    "n_frames": 73787,
+    "n_frames_breakdown": {
+      "visdrone_vid": 33366,
+      "uavdt": 40421
+    },
+    "cpu_load_percent_before": 26.2,
+    "devices_benchmarked": [
+      "CPU",
+      "GPU"
+    ],
+    "gpu_note": null,
+    "weights": "COCO-pretrained yolo26s/yolo26n (temporary; VisDrone weights pending)",
+    "input": "synthetic 1024x540 textured frame (see synth_pair)"
+  },
+  "detector": [
+    {
+      "ir": "models\\p2_bench\\yolo26s_640_e2e_openvino_model\\yolo26s.xml",
+      "device": "CPU",
+      "imgsz": 640,
+      "compile_s_latency": 0.1643647000018973,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 88.79599999636412,
+        "p10_ms": 78.19829000509344,
+        "p90_ms": 111.20566001627594,
+        "mean_ms": 94.02822000090964,
+        "min_ms": 70.42369997361675
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 9.165900002699345,
+        "p10_ms": 5.879069984075613,
+        "p90_ms": 12.402839996502735,
+        "mean_ms": 9.22693899832666,
+        "min_ms": 4.636800003936514
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.28502780001144856,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 10.812950489139578,
+        "ms_per_frame": 92.48169600003166
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 97.96189999906346
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_640_e2e_openvino_model\\yolo26s.xml",
+      "device": "GPU",
+      "imgsz": 640,
+      "compile_s_latency": 0.25933860000805,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 27.60945000045467,
+        "p10_ms": 25.88199001038447,
+        "p90_ms": 31.961569999111816,
+        "mean_ms": 28.752352998417336,
+        "min_ms": 24.682799994479865
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 7.478700004867278,
+        "p10_ms": 4.9124699929961935,
+        "p90_ms": 10.531770010129549,
+        "mean_ms": 7.552315998182166,
+        "min_ms": 4.162900004303083
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 2.7232926999859046,
+      "throughput": {
+        "n_requests": 8,
+        "frames": 100,
+        "fps": 55.00902258030449,
+        "ms_per_frame": 18.178835999860894
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 35.08815000532195
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_960_e2e_openvino_model\\yolo26s.xml",
+      "device": "CPU",
+      "imgsz": 960,
+      "compile_s_latency": 0.46884019998833537,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 258.10265001200605,
+        "p10_ms": 206.66678999259602,
+        "p90_ms": 367.811969993636,
+        "mean_ms": 273.7109409982804,
+        "min_ms": 191.01740000769496
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 13.645450002513826,
+        "p10_ms": 10.430859995540231,
+        "p90_ms": 17.193879999103956,
+        "mean_ms": 13.61523200001102,
+        "min_ms": 8.94450000487268
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.3603078000014648,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 4.219935367974316,
+        "ms_per_frame": 236.9704540001112
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 271.7481000145199
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_960_e2e_openvino_model\\yolo26s.xml",
+      "device": "GPU",
+      "imgsz": 960,
+      "compile_s_latency": 0.22700569999869913,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 67.5008499820251,
+        "p10_ms": 64.39433998893946,
+        "p90_ms": 73.25341000396293,
+        "mean_ms": 69.00661299878266,
+        "min_ms": 61.59509997814894
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 18.528549990151078,
+        "p10_ms": 14.875260015833192,
+        "p90_ms": 23.31439999979921,
+        "mean_ms": 19.220579001121223,
+        "min_ms": 11.7032999987714
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 3.5544347999966703,
+      "throughput": {
+        "n_requests": 2,
+        "frames": 100,
+        "fps": 14.348473072052245,
+        "ms_per_frame": 69.69382700015558
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 86.02939997217618
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_1280_e2e_openvino_model\\yolo26s.xml",
+      "device": "CPU",
+      "imgsz": 1280,
+      "compile_s_latency": 1.1059057000093162,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 646.9427999982145,
+        "p10_ms": 532.6832000049762,
+        "p90_ms": 967.0781299850206,
+        "mean_ms": 696.3114939990919,
+        "min_ms": 476.8033000000287
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 25.978549994761124,
+        "p10_ms": 19.06741000711918,
+        "p90_ms": 36.373410013038665,
+        "mean_ms": 27.03764699981548,
+        "min_ms": 14.86060000024736
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.23740290000569075,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 2.0067226251426833,
+        "ms_per_frame": 498.3249740002793
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 672.9213499929756
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_1280_e2e_openvino_model\\yolo26s.xml",
+      "device": "GPU",
+      "imgsz": 1280,
+      "compile_s_latency": 0.33312699999078177,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 121.6330500174081,
+        "p10_ms": 117.42552999930922,
+        "p90_ms": 130.20575001719408,
+        "mean_ms": 124.13618499966105,
+        "min_ms": 115.49679999006912
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 32.239900014246814,
+        "p10_ms": 22.717379985260777,
+        "p90_ms": 39.55748999142088,
+        "mean_ms": 31.605832000495866,
+        "min_ms": 17.61199999600649
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 4.589000800013309,
+      "throughput": {
+        "n_requests": 2,
+        "frames": 100,
+        "fps": 7.905611301713823,
+        "ms_per_frame": 126.49243199994089
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 153.8729500316549
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_640_e2e_openvino_model\\yolo26n.xml",
+      "device": "CPU",
+      "imgsz": 640,
+      "compile_s_latency": 0.47439160000067204,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 55.643350002355874,
+        "p10_ms": 47.01578998356126,
+        "p90_ms": 79.06413999735378,
+        "mean_ms": 59.24666199920466,
+        "min_ms": 37.6537999836728
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 9.146049982518889,
+        "p10_ms": 6.150200008414686,
+        "p90_ms": 11.535300011746589,
+        "mean_ms": 9.10419899970293,
+        "min_ms": 4.844199982471764
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.29108139997697435,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 20.365653496480395,
+        "ms_per_frame": 49.10227899992606
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 64.78939998487476
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_640_e2e_openvino_model\\yolo26n.xml",
+      "device": "GPU",
+      "imgsz": 640,
+      "compile_s_latency": 0.2834719000093173,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 20.591049993527122,
+        "p10_ms": 17.84166001016274,
+        "p90_ms": 24.09302999440115,
+        "mean_ms": 20.798608000040986,
+        "min_ms": 16.41179999569431
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 9.47104999795556,
+        "p10_ms": 6.657159997848794,
+        "p90_ms": 12.462879993836395,
+        "mean_ms": 9.672571000119206,
+        "min_ms": 5.134599981829524
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 2.5515223999973387,
+      "throughput": {
+        "n_requests": 16,
+        "frames": 100,
+        "fps": 52.21457957438625,
+        "ms_per_frame": 19.151738999935333
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 30.062099991482683
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_960_e2e_openvino_model\\yolo26n.xml",
+      "device": "CPU",
+      "imgsz": 960,
+      "compile_s_latency": 0.39496170001802966,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 87.13885000906885,
+        "p10_ms": 69.4996699836338,
+        "p90_ms": 140.43698000605218,
+        "mean_ms": 98.28343400149606,
+        "min_ms": 62.477200001012534
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 16.129099996760488,
+        "p10_ms": 11.792539991438389,
+        "p90_ms": 22.205259979818948,
+        "mean_ms": 16.388633999449667,
+        "min_ms": 8.622299996204674
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.27281230001244694,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 14.215674469965132,
+        "ms_per_frame": 70.3448859998025
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 103.26795000582933
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_960_e2e_openvino_model\\yolo26n.xml",
+      "device": "GPU",
+      "imgsz": 960,
+      "compile_s_latency": 0.22027290001278743,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 25.270550017012283,
+        "p10_ms": 23.53036999993492,
+        "p90_ms": 28.514560000621714,
+        "mean_ms": 25.703042001696303,
+        "min_ms": 22.957999986829236
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 13.410799991106614,
+        "p10_ms": 9.383230021921918,
+        "p90_ms": 20.60200000414625,
+        "mean_ms": 14.441797001345549,
+        "min_ms": 8.218300004955381
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 2.2440713999967556,
+      "throughput": {
+        "n_requests": 8,
+        "frames": 100,
+        "fps": 59.12277761155061,
+        "ms_per_frame": 16.913955000054557
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 38.6813500081189
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_1280_e2e_openvino_model\\yolo26n.xml",
+      "device": "CPU",
+      "imgsz": 1280,
+      "compile_s_latency": 0.2868863999901805,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 157.33475000888575,
+        "p10_ms": 140.76587999297772,
+        "p90_ms": 222.27104998310105,
+        "mean_ms": 175.07917600072687,
+        "min_ms": 134.89820001996122
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 24.44939999259077,
+        "p10_ms": 18.416579996119253,
+        "p90_ms": 32.571970007848,
+        "mean_ms": 25.3055319970008,
+        "min_ms": 17.08869999856688
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.2714381000259891,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 3.159330339875275,
+        "ms_per_frame": 316.5227729998878
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 181.78415000147652
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_1280_e2e_openvino_model\\yolo26n.xml",
+      "device": "GPU",
+      "imgsz": 1280,
+      "compile_s_latency": 0.22468020001542754,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 41.48889999487437,
+        "p10_ms": 38.59862998651806,
+        "p90_ms": 45.21512001520023,
+        "mean_ms": 41.81082399823936,
+        "min_ms": 36.40320000704378
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 24.779450002824888,
+        "p10_ms": 19.581650017062202,
+        "p90_ms": 36.45058998663444,
+        "mean_ms": 26.505553000606596,
+        "min_ms": 15.599200007272884
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 2.5044506000122055,
+      "throughput": {
+        "n_requests": 2,
+        "frames": 100,
+        "fps": 27.159720613412112,
+        "ms_per_frame": 36.81922999996459
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 66.26834999769926
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_1024_e2e_openvino_model\\yolo26s.xml",
+      "device": "CPU",
+      "imgsz": 1024,
+      "compile_s_latency": 0.4017055999720469,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 283.9951000059955,
+        "p10_ms": 255.94048000639305,
+        "p90_ms": 330.1648200053024,
+        "mean_ms": 292.54064000037033,
+        "min_ms": 237.3770999838598
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 12.541950010927394,
+        "p10_ms": 7.841949997236952,
+        "p90_ms": 19.364040001528338,
+        "mean_ms": 13.797989999002311,
+        "min_ms": 7.024699996691197
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.2239908000046853,
+      "throughput": {
+        "n_requests": 4,
+        "frames": 100,
+        "fps": 1.979547415084217,
+        "ms_per_frame": 505.16597500012716
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 296.5370500169229
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26s_1024_e2e_openvino_model\\yolo26s.xml",
+      "device": "GPU",
+      "imgsz": 1024,
+      "compile_s_latency": 0.5664743999950588,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 59.697499993490055,
+        "p10_ms": 49.71399999340065,
+        "p90_ms": 125.85484001901933,
+        "mean_ms": 73.3236659996328,
+        "min_ms": 46.343800000613555
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 8.754900001804344,
+        "p10_ms": 7.5088499987032264,
+        "p90_ms": 10.980100018787198,
+        "mean_ms": 9.016010000777896,
+        "min_ms": 7.3272000008728355
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 1.8876898999733385,
+      "throughput": {
+        "n_requests": 2,
+        "frames": 100,
+        "fps": 16.481486725067008,
+        "ms_per_frame": 60.674137999885716
+      },
+      "model": "yolo26s",
+      "total_latency_median_ms": 68.4523999952944
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_320_e2e_openvino_model\\yolo26n.xml",
+      "device": "CPU",
+      "imgsz": 320,
+      "compile_s_latency": 0.27699560002656654,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float32'>",
+      "INFERENCE_NUM_THREADS": "4",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 13.382999997702427,
+        "p10_ms": 9.572380012832582,
+        "p90_ms": 18.312129995319992,
+        "mean_ms": 14.029135998571292,
+        "min_ms": 8.955199999036267
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 1.0290500067640096,
+        "p10_ms": 0.9397000045282766,
+        "p90_ms": 1.5035000047646463,
+        "mean_ms": 1.1103309993632138,
+        "min_ms": 0.898600002983585
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 0.26441809997777455,
+      "throughput": {
+        "n_requests": 8,
+        "frames": 100,
+        "fps": 115.44324723161823,
+        "ms_per_frame": 8.662265000166371
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 14.412050004466437
+    },
+    {
+      "ir": "models\\p2_bench\\yolo26n_320_e2e_openvino_model\\yolo26n.xml",
+      "device": "GPU",
+      "imgsz": 320,
+      "compile_s_latency": 0.16015150002203882,
+      "INFERENCE_PRECISION_HINT": "<Type: 'float16'>",
+      "NUM_STREAMS": "1",
+      "OPTIMAL_NUMBER_OF_INFER_REQUESTS": "1",
+      "infer_latency": {
+        "n": 100,
+        "median_ms": 9.3623499997193,
+        "p10_ms": 8.91828001185786,
+        "p90_ms": 10.63869000354316,
+        "mean_ms": 9.962512999481987,
+        "min_ms": 8.814600005280226
+      },
+      "preprocess": {
+        "n": 100,
+        "median_ms": 1.2627000105567276,
+        "p10_ms": 0.9537800156977028,
+        "p90_ms": 1.807239992194809,
+        "mean_ms": 1.3355620013317093,
+        "min_ms": 0.9281999955419451
+      },
+      "output_shape": [
+        1,
+        300,
+        6
+      ],
+      "compile_s_throughput": 1.640709400002379,
+      "throughput": {
+        "n_requests": 64,
+        "frames": 256,
+        "fps": 490.8858226227316,
+        "ms_per_frame": 2.037133593830731
+      },
+      "model": "yolo26n",
+      "total_latency_median_ms": 10.625050010276027
+    }
+  ],
+  "cues": {
+    "threads_1": {
+      "cv2_num_threads": 1,
+      "frame_diff": {
+        "n": 100,
+        "median_ms": 0.5273000133456662,
+        "p10_ms": 0.4669800080591813,
+        "p90_ms": 0.8124400075757877,
+        "mean_ms": 0.6011749993194826,
+        "min_ms": 0.434000015957281
+      },
+      "orb_homography_diff": {
+        "n": 100,
+        "median_ms": 94.13914999458939,
+        "p10_ms": 86.19570999580901,
+        "p90_ms": 116.05187999666668,
+        "mean_ms": 98.04650399833918,
+        "min_ms": 80.32410001032986
+      },
+      "border_strip_diff": {
+        "n": 100,
+        "median_ms": 0.2240499889012426,
+        "p10_ms": 0.21705999388359487,
+        "p90_ms": 0.3405700030270964,
+        "mean_ms": 0.2565090011921711,
+        "min_ms": 0.21469997591339052
+      }
+    },
+    "threads_default_8": {
+      "cv2_num_threads": 8,
+      "frame_diff": {
+        "n": 100,
+        "median_ms": 0.2896000078180805,
+        "p10_ms": 0.26339999749325216,
+        "p90_ms": 0.33185999200213706,
+        "mean_ms": 0.3161569978692569,
+        "min_ms": 0.2503999858163297
+      },
+      "orb_homography_diff": {
+        "n": 100,
+        "median_ms": 74.28395001625177,
+        "p10_ms": 61.06634998577647,
+        "p90_ms": 100.0097299925983,
+        "mean_ms": 78.4202150022611,
+        "min_ms": 45.37119998713024
+      },
+      "border_strip_diff": {
+        "n": 100,
+        "median_ms": 0.7303500024136156,
+        "p10_ms": 0.3295699891168624,
+        "p90_ms": 0.9439699992071837,
+        "mean_ms": 0.6929419992957264,
+        "min_ms": 0.1928000128827989
+      }
+    }
+  },
+  "ratios": [
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.5273000133456662,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.001778192685587093,
+      "c_vs_infer_only": 0.0018567222227937534
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 94.13914999458939,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.3174616797098947,
+      "c_vs_infer_only": 0.3314815994804206
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.2240499889012426,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.0007555547911751886,
+      "c_vs_infer_only": 0.0007889220232902351
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.2896000078180805,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.0009766064908299098,
+      "c_vs_infer_only": 0.001019735931401516
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 74.28395001625177,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.2505047851929885,
+      "c_vs_infer_only": 0.2615677172411902
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.7303500024136156,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.0024629300196111607,
+      "c_vs_infer_only": 0.002571699308890178
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "yolo26n@320/CPU",
+      "cv2_threads": "n/a",
+      "t_cue_ms": 14.412050004466437,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.04860117817872662,
+      "c_vs_infer_only": 0.05074753051782295
+    },
+    {
+      "denominator": "yolo26s@1024/CPU",
+      "cue": "yolo26n@320/GPU",
+      "cv2_threads": "n/a",
+      "t_cue_ms": 10.625050010276027,
+      "t_det_ms": 296.5370500169229,
+      "c": 0.035830429990686405,
+      "c_vs_infer_only": 0.03741279342513909
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.5273000133456662,
+      "t_det_ms": 14.412050004466437,
+      "c": 0.036587439898019415,
+      "c_vs_infer_only": 0.03940073327626035
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 94.13914999458939,
+      "t_det_ms": 14.412050004466437,
+      "c": 6.531974976871072,
+      "c_vs_infer_only": 7.0342337301614775
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.2240499889012426,
+      "t_det_ms": 14.412050004466437,
+      "c": 0.015546018007973002,
+      "c_vs_infer_only": 0.016741387502032964
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.2896000078180805,
+      "t_det_ms": 14.412050004466437,
+      "c": 0.02009429662874682,
+      "c_vs_infer_only": 0.02163939384800109
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 74.28395001625177,
+      "t_det_ms": 14.412050004466437,
+      "c": 5.154294496149433,
+      "c_vs_infer_only": 5.550620191960302
+    },
+    {
+      "denominator": "yolo26n@320/CPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.7303500024136156,
+      "t_det_ms": 14.412050004466437,
+      "c": 0.050676343905778354,
+      "c_vs_infer_only": 0.0545729658924756
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.5273000133456662,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.007703163269394707,
+      "c_vs_infer_only": 0.00883286592241162
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 94.13914999458939,
+      "t_det_ms": 68.4523999952944,
+      "c": 1.3752498086416365,
+      "c_vs_infer_only": 1.576936220191049
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.2240499889012426,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.003273077188186892,
+      "c_vs_infer_only": 0.003753088302285272
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.2896000078180805,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.004230677198140436,
+      "c_vs_infer_only": 0.0048511245504361325
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 74.28395001625177,
+      "t_det_ms": 68.4523999952944,
+      "c": 1.0851913157370412,
+      "c_vs_infer_only": 1.2443393781038126
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.7303500024136156,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.010669457936665797,
+      "c_vs_infer_only": 0.012234180702596582
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "yolo26n@320/CPU",
+      "cv2_threads": "n/a",
+      "t_cue_ms": 14.412050004466437,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.2105411936682594,
+      "c_vs_infer_only": 0.24141798242871235
+    },
+    {
+      "denominator": "yolo26s@1024/GPU",
+      "cue": "yolo26n@320/GPU",
+      "cv2_threads": "n/a",
+      "t_cue_ms": 10.625050010276027,
+      "t_det_ms": 68.4523999952944,
+      "c": 0.15521807870880233,
+      "c_vs_infer_only": 0.1779814902036882
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.5273000133456662,
+      "t_det_ms": 10.625050010276027,
+      "c": 0.04962800295863902,
+      "c_vs_infer_only": 0.05632133100786402
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 94.13914999458939,
+      "t_det_ms": 10.625050010276027,
+      "c": 8.860113590387115,
+      "c_vs_infer_only": 10.05507698360047
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_1",
+      "t_cue_ms": 0.2240499889012426,
+      "t_det_ms": 10.625050010276027,
+      "c": 0.02108695852580011,
+      "c_vs_infer_only": 0.023930956320577637
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "frame_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.2896000078180805,
+      "t_det_ms": 10.625050010276027,
+      "c": 0.02725634303254983,
+      "c_vs_infer_only": 0.030932405627514804
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "orb_homography_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 74.28395001625177,
+      "t_det_ms": 10.625050010276027,
+      "c": 6.991397682308127,
+      "c_vs_infer_only": 7.934327387726259
+    },
+    {
+      "denominator": "yolo26n@320/GPU",
+      "cue": "border_strip_diff",
+      "cv2_threads": "threads_default_8",
+      "t_cue_ms": 0.7303500024136156,
+      "t_det_ms": 10.625050010276027,
+      "c": 0.06873850021479964,
+      "c_vs_infer_only": 0.0780092607556343
+    }
+  ],
+  "dump_estimate": [
+    {
+      "device": "CPU",
+      "per_combo": {
+        "yolo26s@640": {
+          "latency_mode_ms_per_frame": 102.72954999527428,
+          "throughput_mode_ms_per_frame_lower_bound": 92.48169600003166,
+          "hours_latency_mode": 2.1055848070836953,
+          "hours_throughput_mode": 1.8955408063206491
+        },
+        "yolo26s@960": {
+          "latency_mode_ms_per_frame": 276.5157500107307,
+          "throughput_mode_ms_per_frame_lower_bound": 236.9704540001112,
+          "hours_latency_mode": 5.667574346122718,
+          "hours_throughput_mode": 4.857038580362835
+        },
+        "yolo26s@1280": {
+          "latency_mode_ms_per_frame": 677.6889999891864,
+          "throughput_mode_ms_per_frame_lower_bound": 498.3249740002793,
+          "hours_latency_mode": 13.890177289500581,
+          "hours_throughput_mode": 10.21386246015517
+        },
+        "yolo26n@640": {
+          "latency_mode_ms_per_frame": 69.55704998108558,
+          "throughput_mode_ms_per_frame_lower_bound": 49.10227899992606,
+          "hours_latency_mode": 1.4256683463762116,
+          "hours_throughput_mode": 1.0064194057132068
+        },
+        "yolo26n@960": {
+          "latency_mode_ms_per_frame": 108.03560000204016,
+          "throughput_mode_ms_per_frame_lower_bound": 70.3448859998025,
+          "hours_latency_mode": 2.21433967148626,
+          "hours_throughput_mode": 1.4418161397965077
+        },
+        "yolo26n@1280": {
+          "latency_mode_ms_per_frame": 186.55179999768734,
+          "throughput_mode_ms_per_frame_lower_bound": 316.5227729998878,
+          "hours_latency_mode": 3.823638240674821,
+          "hours_throughput_mode": 6.4875738475952005
+        }
+      },
+      "total_hours_latency_mode": 29.12698270124429,
+      "total_hours_throughput_mode": 25.90225123994357
+    },
+    {
+      "device": "GPU",
+      "per_combo": {
+        "yolo26s@640": {
+          "latency_mode_ms_per_frame": 39.85580000153277,
+          "throughput_mode_ms_per_frame_lower_bound": 18.178835999860894,
+          "hours_latency_mode": 0.8168999763091941,
+          "hours_throughput_mode": 0.37260049220048214
+        },
+        "yolo26s@960": {
+          "latency_mode_ms_per_frame": 90.797049968387,
+          "throughput_mode_ms_per_frame_lower_bound": 69.69382700015558,
+          "hours_latency_mode": 1.8610116461159367,
+          "hours_throughput_mode": 1.4284717813501333
+        },
+        "yolo26s@1280": {
+          "latency_mode_ms_per_frame": 158.64060002786573,
+          "throughput_mode_ms_per_frame_lower_bound": 126.49243199994089,
+          "hours_latency_mode": 3.2515594317378134,
+          "hours_throughput_mode": 2.5926380777721216
+        },
+        "yolo26n@640": {
+          "latency_mode_ms_per_frame": 34.8297499876935,
+          "throughput_mode_ms_per_frame_lower_bound": 19.151738999935333,
+          "hours_latency_mode": 0.7138841006505391,
+          "hours_throughput_mode": 0.3925414904411746
+        },
+        "yolo26n@960": {
+          "latency_mode_ms_per_frame": 43.44900000432972,
+          "throughput_mode_ms_per_frame_lower_bound": 18.178449987317435,
+          "hours_latency_mode": 0.890547600922077,
+          "hours_throughput_mode": 0.37259258033727544
+        },
+        "yolo26n@1280": {
+          "latency_mode_ms_per_frame": 71.03599999391008,
+          "throughput_mode_ms_per_frame_lower_bound": 36.81922999996459,
+          "hours_latency_mode": 1.4559814809862897,
+          "hours_throughput_mode": 0.7546612566687187
+        }
+      },
+      "total_hours_latency_mode": 8.98988423672185,
+      "total_hours_throughput_mode": 5.913505678769905
+    }
+  ],
+  "nms_free_note": "YOLO26 is end-to-end (one-to-one head, no NMS): exported IR output shapes = [1, 300, 6] -> fixed top-k detections per frame, so per-frame cost is ~constant w.r.t. the number of objects (no NMS post-processing term). Timings here exclude any post-processing.",
+  "jpeg_decode_1024x540": {
+    "n": 100,
+    "median_ms": 4.767649996210821,
+    "p10_ms": 4.445970003143884,
+    "p90_ms": 6.024099999922328,
+    "mean_ms": 5.202336997608654,
+    "min_ms": 4.339000006439164
+  },
+  "cue_sanity": {
+    "frame_diff_count": 104897,
+    "orb_homography_diff_count": 2994,
+    "orb_info": {
+      "n_kp_a": 2000,
+      "n_kp_b": 2000,
+      "n_good": 1410,
+      "n_inliers": 1385,
+      "H_tx": 2.884387680907064,
+      "H_ty": -0.05307568931033468
+    },
+    "border_strip_diff_count": 20450
+  },
+  "dump_best_device_per_combo": {
+    "yolo26s@640": {
+      "latency_mode_ms_per_frame": 39.85580000153277,
+      "throughput_mode_ms_per_frame_lower_bound": 18.178835999860894,
+      "hours_latency_mode": 0.8168999763091941,
+      "hours_throughput_mode": 0.37260049220048214,
+      "device": "GPU"
+    },
+    "yolo26s@960": {
+      "latency_mode_ms_per_frame": 90.797049968387,
+      "throughput_mode_ms_per_frame_lower_bound": 69.69382700015558,
+      "hours_latency_mode": 1.8610116461159367,
+      "hours_throughput_mode": 1.4284717813501333,
+      "device": "GPU"
+    },
+    "yolo26s@1280": {
+      "latency_mode_ms_per_frame": 158.64060002786573,
+      "throughput_mode_ms_per_frame_lower_bound": 126.49243199994089,
+      "hours_latency_mode": 3.2515594317378134,
+      "hours_throughput_mode": 2.5926380777721216,
+      "device": "GPU"
+    },
+    "yolo26n@640": {
+      "latency_mode_ms_per_frame": 34.8297499876935,
+      "throughput_mode_ms_per_frame_lower_bound": 19.151738999935333,
+      "hours_latency_mode": 0.7138841006505391,
+      "hours_throughput_mode": 0.3925414904411746,
+      "device": "GPU"
+    },
+    "yolo26n@960": {
+      "latency_mode_ms_per_frame": 43.44900000432972,
+      "throughput_mode_ms_per_frame_lower_bound": 18.178449987317435,
+      "hours_latency_mode": 0.890547600922077,
+      "hours_throughput_mode": 0.37259258033727544,
+      "device": "GPU"
+    },
+    "yolo26n@1280": {
+      "latency_mode_ms_per_frame": 71.03599999391008,
+      "throughput_mode_ms_per_frame_lower_bound": 36.81922999996459,
+      "hours_latency_mode": 1.4559814809862897,
+      "hours_throughput_mode": 0.7546612566687187,
+      "device": "GPU"
+    }
+  },
+  "dump_best_total_hours_throughput": 5.913505678769905,
+  "dump_best_total_hours_latency": 8.98988423672185,
+  "load_before": {
+    "cpu_percent_2s": 26.2,
+    "other_python_processes": [
+      {
+        "pid": 1268,
+        "cmd": "s\\run_m_all.py --plan <drive>/THS Programing\\Microduck\\docs\\benchmark\\runner\\plan.json --root <drive>/THS Programing\\Microduck run"
+      },
+      {
+        "pid": 9580,
+        "cmd": "rogram\\02. Working\\28_Oblivious_Stress_Test\\.venv\\Scripts\\python.exe -u code/p2_bench_openvino.py --runs 100 --warmup 10"
+      },
+      {
+        "pid": 15144,
+        "cmd": "s\\run_m_all.py --plan <drive>/THS Programing\\Microduck\\docs\\benchmark\\runner\\plan.json --root <drive>/THS Programing\\Microduck run"
+      }
+    ]
+  },
+  "load_after": {
+    "cpu_percent_2s": 34.9,
+    "other_python_processes": [
+      {
+        "pid": 416,
+        "cmd": "<home>\\AppData\\Local\\Programs\\Python\\Python311\\python.exe code/synthetic_check.py 80 300"
+      },
+      {
+        "pid": 1268,
+        "cmd": "s\\run_m_all.py --plan <drive>/THS Programing\\Microduck\\docs\\benchmark\\runner\\plan.json --root <drive>/THS Programing\\Microduck run"
+      },
+      {
+        "pid": 9580,
+        "cmd": "rogram\\02. Working\\28_Oblivious_Stress_Test\\.venv\\Scripts\\python.exe -u code/p2_bench_openvino.py --runs 100 --warmup 10"
+      },
+      {
+        "pid": 15144,
+        "cmd": "s\\run_m_all.py --plan <drive>/THS Programing\\Microduck\\docs\\benchmark\\runner\\plan.json --root <drive>/THS Programing\\Microduck run"
+      },
+      {
+        "pid": 30316,
+        "cmd": "<home>\\AppData\\Local\\Programs\\Python\\Python311\\python.exe code/meva_download.py"
+      }
+    ]
+  },
+  "bench_wall_s": 553.2293444000243
+}

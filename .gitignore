@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+tests/fixtures/
+# never commit data, frames, dumps or weights
+data/
+models/
+*.zip
+*.rar
+*.7z
+*.pt
+*.onnx
+*.bin
+*.parquet
+*.jpg
+*.mp4
+results/p2/dumps/
+results/p2/hits/
+*.bak

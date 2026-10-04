@@ -1,0 +1,322 @@
+{
+  "dir": "$THS_DATASETS\\_models\\28\\yolo26s_visdrone_1024",
+  "hash": {
+    "TRAIN_LOG.md": {
+      "ok": 30,
+      "mismatch": 0,
+      "missing": 0,
+      "listed": 30
+    }
+  },
+  "models": [
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_1280\\best.xml",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 3563.75,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        33600
+      ],
+      "ms_ultralytics_bus.jpg": 4245.96,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_640\\best.xml",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 1440.37,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        8400
+      ],
+      "ms_ultralytics_bus.jpg": 1254.48,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_openvino_960\\best.xml",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 3344.39,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        18900
+      ],
+      "ms_ultralytics_bus.jpg": 3857.21,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "weights\\best_openvino_model\\best.xml",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 4279.88,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        33600
+      ],
+      "ms_ultralytics_bus.jpg": 6251.55,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_1280.onnx",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 6183.29,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        33600
+      ],
+      "ms_ultralytics_bus.jpg": 5196.98,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_640.onnx",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 2373.36,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        8400
+      ],
+      "ms_ultralytics_bus.jpg": 2236.16,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "export\\yolo26s_visdrone_1024_960.onnx",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 7355.48,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        18900
+      ],
+      "ms_ultralytics_bus.jpg": 3555.59,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "weights\\best.onnx",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 7866.37,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        14,
+        33600
+      ],
+      "ms_ultralytics_bus.jpg": 7275.51,
+      "boxes_ultralytics_bus.jpg": 0
+    }
+  ],
+  "hash_ok": true,
+  "no_nms": [
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_1280\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          14,
+          33600
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 33600] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_640\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          14,
+          8400
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 8400] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_openvino_960\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          14,
+          18900
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 18900] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "weights\\best_openvino_model\\best.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          14,
+          33600
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 33600] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_1280.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          14,
+          33600
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 33600] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_640.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          14,
+          8400
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 8400] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "export\\yolo26s_visdrone_1024_960.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          14,
+          18900
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 18900] != [1, 400, 6]"
+      ],
+      "pass": false
+    },
+    {
+      "file": "weights\\best.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          14,
+          33600
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": false,
+      "problems": [
+        "output shape [1, 14, 33600] != [1, 400, 6]"
+      ],
+      "pass": false
+    }
+  ],
+  "no_nms_ok": false,
+  "all_ok": false
+}

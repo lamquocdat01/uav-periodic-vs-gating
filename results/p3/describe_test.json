@@ -1,0 +1,104 @@
+{
+ "note": "MÔ TẢ — không tính vào tiêu chí; iso ngoài họ chấm theo dấu (không CI)",
+ "desc_by_kind": {
+  "R=inf": {
+   "n": 888,
+   "correct": 413,
+   "wrong": 17,
+   "inconclusive": 14,
+   "under_size": 444
+  },
+  "eps=0.05": {
+   "n": 384,
+   "correct": 192,
+   "wrong": 0,
+   "inconclusive": 0,
+   "under_size": 192
+  },
+  "eps=0.01": {
+   "n": 384,
+   "correct": 192,
+   "wrong": 0,
+   "inconclusive": 0,
+   "under_size": 192
+  },
+  "L=10": {
+   "n": 444,
+   "correct": 198,
+   "wrong": 21,
+   "inconclusive": 9,
+   "under_size": 216
+  },
+  "L=30": {
+   "n": 384,
+   "correct": 185,
+   "wrong": 0,
+   "inconclusive": 7,
+   "under_size": 192
+  },
+  "miss": {
+   "n": 96,
+   "correct": 38,
+   "wrong": 0,
+   "inconclusive": 10,
+   "under_size": 48
+  },
+  "M 1-5": {
+   "n": 592,
+   "correct": 0,
+   "wrong": 0,
+   "inconclusive": 0,
+   "under_size": 592
+  },
+  "moving >20": {
+   "n": 296,
+   "correct": 0,
+   "wrong": 0,
+   "inconclusive": 0,
+   "under_size": 296
+  },
+  "H8 pooled": {
+   "n": 36,
+   "correct": 22,
+   "wrong": 10,
+   "inconclusive": 4,
+   "under_size": 0
+  }
+ },
+ "n_desc": 1740,
+ "sensitivity": {
+  "onset_alt": {
+   "correct": 43,
+   "wrong": 3,
+   "inconclusive": 26,
+   "under_size": 0,
+   "n": 72
+  },
+  "roi5": {
+   "correct": 63,
+   "wrong": 5,
+   "inconclusive": 4,
+   "under_size": 0,
+   "n": 72
+  },
+  "score005": {
+   "correct": 48,
+   "wrong": 1,
+   "inconclusive": 23,
+   "under_size": 0,
+   "n": 72
+  },
+  "score050": {
+   "correct": 63,
+   "wrong": 6,
+   "inconclusive": 3,
+   "under_size": 0,
+   "n": 72
+  }
+ },
+ "figures": [
+  "paper/figs/fig_p3_boundary_map.pdf",
+  "paper/figs/fig_p3_forest.pdf",
+  "paper/figs/fig_p3_iso_qostar.pdf"
+ ]
+}

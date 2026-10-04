@@ -1,0 +1,18 @@
+{
+ "updated": "2026-10-01T15:45:03",
+ "dumps": [
+  {
+   "name": "yolo26n_640",
+   "dataset": "uavdt",
+   "split": "train",
+   "seqs_done": 30,
+   "seqs_total": 30,
+   "frames": 24143,
+   "t_ms_median": 44.265099997574,
+   "boxes_per_frame": 92.46539369589529,
+   "boxes_per_frame_conf25": 28.791160999047342,
+   "device": "GPU",
+   "model_dir": "$THS_DATASETS\\_models\\28\\yolo26n_visdrone_1024\\export\\yolo26n_visdrone_1024_openvino_640"
+  }
+ ]
+}

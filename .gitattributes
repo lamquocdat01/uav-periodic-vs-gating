@@ -1,0 +1,2 @@
+# store every file byte-for-byte (frozen files are verified by sha256)
+* -text

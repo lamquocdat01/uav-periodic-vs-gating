@@ -1,0 +1,94 @@
+{
+  "tol": 0.001,
+  "all_pass": true,
+  "rows": [
+    {
+      "imgsz": 640,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.002407955238595605,
+      "pass": true
+    },
+    {
+      "imgsz": 640,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.002350384369492531,
+      "pass": true
+    },
+    {
+      "imgsz": 960,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.0008681252365931869,
+      "pass": true
+    },
+    {
+      "imgsz": 960,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.0008221676689572632,
+      "pass": true
+    },
+    {
+      "imgsz": 1024,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.0004992694593966007,
+      "pass": true
+    },
+    {
+      "imgsz": 1024,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.00047658721450716257,
+      "pass": true
+    },
+    {
+      "imgsz": 1280,
+      "format": "openvino",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.00012402591528370976,
+      "pass": true
+    },
+    {
+      "imgsz": 1280,
+      "format": "onnx",
+      "n_img": 20,
+      "count_mismatch": 0,
+      "cls_mismatch": 0,
+      "max_dxyxy": 0.0,
+      "max_dscore": 0.0,
+      "max_score_seen": 0.00012360572873149067,
+      "pass": true
+    }
+  ]
+}

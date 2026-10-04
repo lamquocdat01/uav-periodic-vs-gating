@@ -1,0 +1,227 @@
+{
+  "dir": "$THS_DATASETS\\_models\\28\\yolo26s_visdrone_1024\\export_nonms",
+  "hash": {},
+  "models": [
+    {
+      "model": "yolo26s_visdrone_1024_1280_openvino_model\\yolo26s_visdrone_1024_1280.xml",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 929.44,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 1066.54,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "yolo26s_visdrone_1024_640_openvino_model\\yolo26s_visdrone_1024_640.xml",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 272.72,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 349.34,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "yolo26s_visdrone_1024_960_openvino_model\\yolo26s_visdrone_1024_960.xml",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 355.08,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 409.33,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "yolo26s_visdrone_1024_1280.onnx",
+      "input_hw": [
+        1280,
+        1280
+      ],
+      "ms_synthetic_1024x540": 562.92,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 583.51,
+      "boxes_ultralytics_bus.jpg": 0
+    },
+    {
+      "model": "yolo26s_visdrone_1024_640.onnx",
+      "input_hw": [
+        640,
+        640
+      ],
+      "ms_synthetic_1024x540": 119.01,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 129.93,
+      "boxes_ultralytics_bus.jpg": 1
+    },
+    {
+      "model": "yolo26s_visdrone_1024_960.onnx",
+      "input_hw": [
+        960,
+        960
+      ],
+      "ms_synthetic_1024x540": 374.57,
+      "boxes_synthetic_1024x540": 0,
+      "output_shape": [
+        1,
+        400,
+        6
+      ],
+      "ms_ultralytics_bus.jpg": 507.84,
+      "boxes_ultralytics_bus.jpg": 1
+    }
+  ],
+  "hash_ok": true,
+  "no_nms": [
+    {
+      "file": "yolo26s_visdrone_1024_1280_openvino_model\\yolo26s_visdrone_1024_1280.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "yolo26s_visdrone_1024_640_openvino_model\\yolo26s_visdrone_1024_640.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "yolo26s_visdrone_1024_960_openvino_model\\yolo26s_visdrone_1024_960.xml",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "openvino",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "yolo26s_visdrone_1024_1280.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "yolo26s_visdrone_1024_640.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    },
+    {
+      "file": "yolo26s_visdrone_1024_960.onnx",
+      "expected_output": [
+        1,
+        400,
+        6
+      ],
+      "format": "onnx",
+      "outputs": [
+        [
+          1,
+          400,
+          6
+        ]
+      ],
+      "nms_ops": [],
+      "has_topk": true,
+      "problems": [],
+      "pass": true
+    }
+  ],
+  "no_nms_ok": true,
+  "all_ok": true
+}
