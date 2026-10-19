@@ -12,7 +12,7 @@ Code, frozen pre-registration and results for the paper below.
 | submitted PDF | [`paper_submitted/main.pdf`](paper_submitted/main.pdf) — sha256 `b6bcbfde2028e309f54a4b03fa391506b673f3910ef296b1a3410f1cf6092b06` |
 | supplementary | [`paper_submitted/supplementary.pdf`](paper_submitted/supplementary.pdf) — sha256 `e2003d817f544817a3686da76c2a12752c251b10e14a95379b4d9500ebbf7c28` |
 | LaTeX source | `source_latex.zip` submitted to ScholarOne (not included here) — sha256 `10a12253e3737521f538430f5e00c22c3d9751e0273f5f83526553e6519dc5bf` |
-| IEEE Author Portal bundle | T-ITS moved to the IEEE Author Portal, which compiles a single flattened LaTeX file (same text and numbers): main document `source_latex_portal.zip` (not included here) — sha256 `0f3600cbb89b43e85ba2b9cc5ad2b744afe2cc2c9d664501530a80885a3d1e75`; compiled [`paper_submitted/main_portal.pdf`](paper_submitted/main_portal.pdf) — sha256 `78641b44de581cbc8892b6f4aea22a31f12e27341d701be721bacfc97accf12e`; [`paper_submitted/supplementary_portal.pdf`](paper_submitted/supplementary_portal.pdf) — sha256 `27b851efd5bde13d09dc4eccf9e8e1d3c5a83c784caefb2c4713c98245f3b34f` |
+| IEEE Author Portal bundle | T-ITS moved to the IEEE Author Portal, which compiles a single flattened LaTeX file (same text and numbers): main document `source_latex_portal.zip` (not included here) — sha256 `0f3600cbb89b43e85ba2b9cc5ad2b744afe2cc2c9d664501530a80885a3d1e75`; compiled [`paper_submitted/main_portal.pdf`](paper_submitted/main_portal.pdf) — sha256 `78641b44de581cbc8892b6f4aea22a31f12e27341d701be721bacfc97accf12e`; [`paper_submitted/supplementary_portal.pdf`](paper_submitted/supplementary_portal.pdf) — sha256 `ed3e8f231c082ad1b3123691e75ae3ddba7ad34003ade7478f0ea49bd36e12c4` |
 
 ## Summary
 
