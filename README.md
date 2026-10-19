@@ -9,9 +9,9 @@ Code, frozen pre-registration and results for the paper below.
 | title | **When Is Periodic Detection Enough for UAV Traffic Monitoring? Theory and a Pre-Registered Test of Cue-Triggered Gating** |
 | author | Dat Lam Quoc — FPT School of Business and Technology (FSB) – FPT University, Ho Chi Minh City, Vietnam — ORCID [0009-0004-5432-9343](https://orcid.org/0009-0004-5432-9343) — lamquocdat@gmail.com |
 | status | submitted to IEEE Transactions on Intelligent Transportation Systems (T-ITS), October 2026 |
-| submitted PDF | [`paper_submitted/main.pdf`](paper_submitted/main.pdf) — sha256 `d0c8a4853d6fdb019db54202f55ef25f68ee93516499d8c09a1875eb8977e1f1` |
+| submitted PDF | [`paper_submitted/main.pdf`](paper_submitted/main.pdf) — sha256 `b6bcbfde2028e309f54a4b03fa391506b673f3910ef296b1a3410f1cf6092b06` |
 | supplementary | [`paper_submitted/supplementary.pdf`](paper_submitted/supplementary.pdf) — sha256 `e2003d817f544817a3686da76c2a12752c251b10e14a95379b4d9500ebbf7c28` |
-| LaTeX source | `source_latex.zip` submitted to ScholarOne (not included here) — sha256 `72cc9f2b18af235e6137da5f5d97a790626cd579686c8a62ac2b34dfd0ede03e` |
+| LaTeX source | `source_latex.zip` submitted to ScholarOne (not included here) — sha256 `10a12253e3737521f538430f5e00c22c3d9751e0273f5f83526553e6519dc5bf` |
 
 ## Summary
 
